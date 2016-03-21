@@ -240,13 +240,13 @@ else {
             data: JSON.stringify(csvdata),
             cache: false,
             success: function(response) {
-                makeMessage("<h4>" + response.responseText + "</h4>Siden vil blive genindlæst om et øjeblik!", "success", "message");
+                makeMessage("<h4>" + response.responseText + "</h4>The page will be reloaded in a moment!", "success", "message");
                 // reload page in 3 sec
                 setTimeout(function(){location.reload();}, 2500);
                 
             },
             error: function(response) {
-                makeMessage("<h4>Ups</h4>" + response.status + " " + response.statusText, "danger", "message");
+                makeMessage("<h4>Oops</h4>" + response.status + " " + response.statusText, "danger", "message");
             }
         });        
     });
@@ -258,7 +258,7 @@ else {
             + messagetext + "</div>";
         $("#"+messageid).html(h);
         return;
-    }
+   }
 
     function makeTableRow(linenum, columns, isenabled) {
         var h = "<tr rel=\"row\" id=\"row-" + linenum + "\" class=\"" + (isenabled===true ? "success" : "") + "\">";
