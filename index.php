@@ -38,8 +38,8 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-              <li class="active"><a href="index.php">Rediger CSV</a></li>
-              <li><a href="help.php">Hjælp</a></li>
+              <li class="active"><a href="index.php">Edit CSV</a></li>
+              <!--<li><a href="help.php">Hjælp</a></li> -->
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -85,7 +85,7 @@ fclose($fp);
             <div class="col-lg-3 col-md-4 col-sm-5">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">CSV filer</h3>
+                        <h3 class="panel-title">CSV files</h3>
                     </div>                
                     <div class="list-group">
 <?php 
@@ -135,12 +135,12 @@ else {
                     </table>
                 </div>
                 <div class="text-right">
-                    <a href="#" id="addrow" class="btn btn-default"><i class="fa fa-plus"></i> Ny række</a>
+                    <a href="#" id="addrow" class="btn btn-default"><i class="fa fa-plus"></i> New Entry</a>
                 </div>
                 <hr>
                 <div>
-                    <a href="#" id="cancel" class="btn btn-default"><i class="fa fa-undo"></i> Annulér</a>
-                    <a href="#" id="save" class="btn btn-primary"><i class="fa fa-save"></i> Gem ændringer</a>
+                    <a href="#" id="cancel" class="btn btn-default"><i class="fa fa-undo"></i> Cancel</a>
+                    <a href="#" id="save" class="btn btn-primary"><i class="fa fa-save"></i> Save Changes</a>
                 </div>
                 </form>
                 <div style="margin-top: 20px;" id="message">
